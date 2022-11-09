@@ -13,12 +13,17 @@ Desarrolado por A.M
 Análisis de algoritmos 3CV11
 
 """
+import numpy as np
 
-print("Ingrese un número para n")
-n=input()
-print("Ingrese un número para el tamanio del arreglo")
-tams=input()
-print("los datos capturados son:\n n=",n ,"\n tam=", tams )
 
-Arr_A = [tams]
+tam=int(input("Ingrese un número para el tamanio del arreglo"))
+print("los datos capturados son:\n tam=", tam )
+
+x=[]
+
+for i in range(tam):
+    number=np.random.randint(0, (tam*3))
+    x.append(number)
+print(x)
+    
 
